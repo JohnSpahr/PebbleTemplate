@@ -33,8 +33,8 @@ static void update_time()
   // change text color depending on connection status
   if (isConnected)
   {
-    // if watch is connected to phone, set color to "windsor tan"
-    text_layer_set_text_color(s_time_layer, GColorWindsorTan);
+    // if watch is connected to phone, set color to orange
+    text_layer_set_text_color(s_time_layer, GColorOrange);
   }
   else
   {
@@ -82,16 +82,16 @@ static void window_load(Window *window)
 
   // create time text layer...
   s_time_layer = text_layer_create(
-      GRect(0, PBL_IF_ROUND_ELSE(14, 4), bounds.size.w, bounds.size.h));
+      GRect(0, 4, bounds.size.w, bounds.size.h));
 
   // create GFonts for text layers...
-  s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TYPEFACE_36));
+  s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TYPEFACE_48));
 
   // time text layer setup...
   text_layer_set_background_color(s_time_layer, GColorClear);        // set clear background color
-  text_layer_set_text_color(s_time_layer, GColorWindsorTan);              // set text color
+  text_layer_set_text_color(s_time_layer, GColorOrange);              // set text color
   text_layer_set_text(s_time_layer, "00:00");                        // set default text to 00:00
-  text_layer_set_font(s_time_layer, s_time_font);                    // set font and size of 36pt
+  text_layer_set_font(s_time_layer, s_time_font);                    // set font and size of 48pt
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter); // center align text
 
   // add clock text layers to window layer...

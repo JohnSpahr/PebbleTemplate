@@ -1,7 +1,7 @@
 {
     "name": "disintegration",
     "author": "John Spahr",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "dependencies": {},
     "pebble": {
         "displayName": "Disintegration",
@@ -29,7 +29,7 @@
                 },
                 {
                     "type": "font",
-                    "name": "FONT_TYPEFACE_36",
+                    "name": "FONT_TYPEFACE_48",
                     "file": "fonts/cure.ttf",
                     "compatibility": "2.7"
                 }
