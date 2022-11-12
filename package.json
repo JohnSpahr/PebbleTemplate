@@ -1,0 +1,39 @@
+{
+    "name": "disintegration",
+    "author": "John Spahr",
+    "version": "1.0.0",
+    "dependencies": {},
+    "pebble": {
+        "displayName": "Disintegration",
+        "uuid": "4c43aacf-dddd-48fc-acef-0fb9320caddd",
+        "sdkVersion": "3",
+        "enableMultiJS": true,
+        "targetPlatforms": [
+            "basalt",
+            "chalk"
+        ],
+        "watchapp": {
+            "watchface": true
+        },
+        "resources": {
+            "media": [{
+                    "file": "images/icon.png",
+                    "menuIcon": true,
+                    "name": "IMAGE_MONO_ICON",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/cover.png",
+                    "name": "IMAGE_COVER",
+                    "type": "bitmap"
+                },
+                {
+                    "type": "font",
+                    "name": "FONT_TYPEFACE_36",
+                    "file": "fonts/cure.ttf",
+                    "compatibility": "2.7"
+                }
+            ]
+        }
+    }
+}
